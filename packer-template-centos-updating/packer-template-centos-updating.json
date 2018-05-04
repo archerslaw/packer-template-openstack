@@ -1,0 +1,31 @@
+{
+  "builders": [{
+    "type": "openstack",
+    "identity_endpoint": "https://iam.cn-north-1.myhuaweicloud.com/v3",
+    "tenant_name": "cn-north-1",
+    "domain_name": "xxxxxxx", 
+    "username": "yyyyyy",
+    "password": "zzzzzz",
+    "ssh_username": "root",
+    "region": "cn-north-1",
+    "image_name": "CentOS-image-updating-powered-by-Packer",
+    "source_image": "dec6b36c-b122-4a20-b4eb-e9c32344b13e",
+    "flavor": "s2.small.1",
+    "networks": ["036de9cf-3330-4b14-ba71-62a8ba75c60a"],
+    "floating_ip": "**.**.**.**"
+  }],
+  "provisioners": [{
+    "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -S -E sh '{{ .Path }}'",
+    "inline": [
+      "yum update -y"
+    ],
+    "inline_shebang": "/bin/sh -x",
+    "type": "shell",
+    "skip_clean": true
+  }],
+  "post-processors": [{
+    "strip_path": true,
+    "output": "packer-template-centos-updating-result.log",
+    "type": "manifest"
+  }]
+}
