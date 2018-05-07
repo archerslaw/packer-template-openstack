@@ -11,6 +11,7 @@ Currently it supports packer version ≥ v1.2.3.
 
 ## How to excute Packer
 $ sudo packer build packer-template-example/huaweicloud.json
+
 e.g: $ sudo packer build packer-template-centos-updating/packer-template-centos-updating.json
 
 If output similar as following, configurations, you can now start the journey of huaweicloud with packer support
