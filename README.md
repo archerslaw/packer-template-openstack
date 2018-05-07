@@ -1,5 +1,7 @@
 # Huaweicloud packer template example for OpenStack Platform 
+
 Building the private image from OpenStack instance with Packer tool.
+
 Currently it supports packer version ≥ v1.2.3.
 
 ## Install
@@ -28,6 +30,7 @@ If output similar as following, configurations, you can now start the journey of
  ```  
 ## How to debug
 $ sudo exprot OS_DEBUG=1
+
 $ sudo exprot PACKER_LOG_PATH=/var/log/packer.log
    
 ## Example
