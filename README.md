@@ -2,17 +2,17 @@
 Building the private image from OpenStack instance with Packer tool.
 Currently it supports packer version ≥ v1.2.3.
 
-# Install
-Download the correct packer from you platform from https://www.packer.io/downloads.html
-Install packer according to the guide from https://www.packer.io/docs/installation.html
-OpenStack Builder helps from https://www.packer.io/docs/builders/openstack.html
+## Install
+- Download the correct packer from you platform from https://www.packer.io/downloads.html
+- Install packer according to the guide from https://www.packer.io/docs/installation.html
+- OpenStack Builder helps from https://www.packer.io/docs/builders/openstack.html
 
-# How to excute Packer
+## How to excute Packer
 $ sudo packer build packer-template-example/huaweicloud.json
 e.g: $ sudo packer build packer-template-centos-updating/packer-template-centos-updating.json
 
 If output similar as following, configurations, you can now start the journey of huaweicloud with packer support
-
+```
    openstack output will be in this color.
    
    ==> openstack: Loading flavor: s2.small.1
@@ -25,13 +25,14 @@ If output similar as following, configurations, you can now start the journey of
    ==> openstack: Waiting for SSH to become available ...
    ==> openstack: Connected to SSH!
    ==> openstack: Provisioning with shell script: /tmp/packer-shell17057963
-   
-# How to debug
+ ```  
+## How to debug
 $ sudo exprot OS_DEBUG=1
 $ sudo exprot PACKER_LOG_PATH=/var/log/packer.log
    
-# Example
-Create a simple image with OS updating.
+## Example
+### Create a simple image with OS updating.
+```
 {
   "builders": [{
     "type": "openstack",
@@ -65,3 +66,4 @@ Create a simple image with OS updating.
     "type": "manifest"
   }]
 }
+```
