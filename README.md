@@ -1,4 +1,4 @@
-# Huaweicloud packer template example for OpenStack Platform 
+# Huaweicloud packer template example for OpenStack 
 
 Building the private image from OpenStack instance with Packer tool.
 
