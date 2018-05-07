@@ -28,7 +28,14 @@ If output similar as following, configurations, you can now start the journey of
    ==> openstack: Waiting for SSH to become available ...
    ==> openstack: Connected to SSH!
    ==> openstack: Provisioning with shell script: /tmp/packer-shell17057963
- ```  
+   ......
+   ==> openstack: Running post-processor: mainfest
+   Build 'openstack' finished.
+   
+   ==> openstack: Build finished. The artifacts of successfull builds are:
+   --> openstack: An image was created: 7f1e3f6d-89d3-49f5-af11-c05362d14a01
+   --> openstack:
+```
 ## How to debug
 $ sudo exprot OS_DEBUG=1
 
