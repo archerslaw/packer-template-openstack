@@ -78,3 +78,6 @@ $ sudo exprot PACKER_LOG_PATH=/var/log/packer.log
   }]
 }
 ```
+## Documentation
+Comprehensive documentation is viewable on the Packer website:
+http://www.packer.io/docs
