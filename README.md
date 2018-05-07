@@ -1,4 +1,4 @@
-# Huaweicloud packer template example for OpenStack 
+# Packer template example for OpenStack platform
 
 Building the private image from OpenStack instance with Packer tool.
 
@@ -10,11 +10,11 @@ Currently it supports packer version ≥ v1.2.3.
 - OpenStack Builder helps from https://www.packer.io/docs/builders/openstack.html
 
 ## How to excute Packer
-$ sudo packer build packer-template-example/huaweicloud.json
+$ sudo packer build packer-template-example/openstckcloud.json
 
 e.g: $ sudo packer build packer-template-centos-updating/packer-template-centos-updating.json
 
-If output similar as following, configurations, you can now start the journey of huaweicloud with packer support
+If output similar as following, configurations, you can now start the journey of OpenStack platform with packer support
 ```
    openstack output will be in this color.
    
