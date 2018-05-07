@@ -2,7 +2,7 @@
 
 Building the private image from OpenStack instance with Packer tool.
 
-Currently it supports packer version ≥ v1.2.3.
+Currently, we recommend you use Packer v1.2.3 or latest version.
 
 ## Install
 - Download the correct packer from you platform from https://www.packer.io/downloads.html
