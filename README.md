@@ -50,14 +50,14 @@ $ sudo exprot PACKER_LOG_PATH=/var/log/packer.log
     "identity_endpoint": "https://iam.cn-north-1.myhuaweicloud.com/v3",
     "tenant_name": "cn-north-1",
     "domain_name": "xxxxxxx", 
-    "username": "yyyyyy",
-    "password": "zzzzzz",
+    "username": "xxxxxxx",
+    "password": "yyyyyyy",
     "ssh_username": "root",
     "region": "cn-north-1",
     "image_name": "CentOS-image-updating-powered-by-Packer",
-    "instance_name": "CentOS-image-updating-powered-by-Packer".
+    "instance_name": "CentOS-image-updating-powered-by-Packer",
     "source_image": "dec6b36c-b122-4a20-b4eb-e9c32344b13e",
-    "availibility_zone": "cn-north-1b"
+    "availability_zone": "cn-north-1a",
     "flavor": "s2.small.1",
     "networks": ["036de9cf-3330-4b14-ba71-62a8ba75c60a"],
     "floating_ip": "**.**.**.**"
